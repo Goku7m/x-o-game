@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.game-container {
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    padding: 32px 24px;
+    max-width: 350px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 24px;
+    color: #e91e63;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 10px;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+.cell {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(233,30,99,0.15);
+    font-size: 2.5rem;
+    color: #e91e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+    height: 80px;
+    width: 80px;
+}
+
+.cell:hover {
+    background: #ffe4ef;
+}
+
+#reset-btn {
+    background: #e91e63;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+}
+
+#reset-btn:hover {
+    background: #ad1457;
+}
+
+#status {
+    font-size: 1.2rem;
+    color: #333;
+    min-height: 32px;
+}
